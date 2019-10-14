@@ -5,6 +5,8 @@ import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+
+import com.ahmad.cv.fragments.education;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.tabs.TabLayout;
 import com.rhexgomez.typer.roboto.TyperRoboto;
@@ -44,7 +46,7 @@ public class ScrollingActivity extends AppCompatActivity {
         collapsingToolbarLayout.setExpandedTitleTypeface(TyperRoboto.ROBOTO_REGULAR());
         Picasso.get().load(R.drawable.profile).into(profileImage);
         mViewPagerAdapter.addFragment(AboutFragment.newInstance(), "About");
-        mViewPagerAdapter.addFragment(EducationFragment.newInstance(), "Education");
+        mViewPagerAdapter.addFragment(education.newInstance(), "Education");
         mViewPagerAdapter.addFragment(ProfessionFragment.newInstance(), "Experience");
         mViewPager.setAdapter(mViewPagerAdapter);
         tabLayout.setupWithViewPager(mViewPager);

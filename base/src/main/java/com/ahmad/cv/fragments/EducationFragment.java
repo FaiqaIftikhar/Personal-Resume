@@ -30,13 +30,14 @@ public class EducationFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ////////changes//////
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_blank_fragment2, container, false);
-        RecyclerView recyclerViewDemo = view.findViewById(R.id.recyclerViewDemo1);
+        RecyclerView recyclerViewDemo = view.findViewById(R.id.educationList);
         recyclerViewDemo.setLayoutManager(new LinearLayoutManager(getContext()));
        recyclerViewDemo.setAdapter(new EducationAdapter(feedItems(), getContext()));
         return view;
