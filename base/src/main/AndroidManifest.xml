@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ahmad.cv.base">
+    package="com.faiqa.cv.base">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <application
@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.ahmad.cv.activities.ScrollingActivity"
+            android:name="com.faiqa.cv.activities.ScrollingActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -33,7 +33,7 @@
 
                 <data
                     android:scheme="https"
-                    android:host="shahwaiz90.github.io"
+                    android:host="faiqaiftikhar.github.io"
                     android:pathPattern="/resume/" />
             </intent-filter>
             <intent-filter>
@@ -44,8 +44,19 @@
 
                 <data
                     android:scheme="http"
-                    android:host="shahwaiz90.github.io"
+                    android:host="faiqaiftikhar.github.io"
                     android:pathPattern="/resume" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="faiqaiftikhar.github.io"
+                    android:pathPrefix="/resume/" />
             </intent-filter>
 
 
